@@ -103,13 +103,14 @@ def top_page():
     total = cur.fetchone()['c']
 
     #cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100")
-    cur.execute("SELECT memo.id,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100")
+    #cur.execute("SELECT memo.id,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100")
+    cur.execute("SELECT memo.id,substring_index(memo.content,'\n',1) as content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100")
     memos = cur.fetchall()
     #for memo in memos:
     #    cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
     #    memo['username'] = cur.fetchone()['username']
-    for memo in memos:
-         memo['content'] = memo['content'].split('\n')[0]
+    #for memo in memos:
+    #     memo['content'] = memo['content'].split('\n')[0]
     cur.close()
 
     return render_template(
@@ -129,7 +130,8 @@ def recent(page):
     total = cur.fetchone()['c']
 
     #cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100 OFFSET " + str(page * 100))
-    cur.execute("SELECT memo.id,memo.user,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100 OFFSET " + str(page * 100))
+    #cur.execute("SELECT memo.id,memo.user,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100 OFFSET " + str(page * 100))
+    cur.execute("SELECT memo.id,memo.user,substring_index(memo.content,'\n',1) as content, memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100 OFFSET " + str(page * 100))
     memos = cur.fetchall()
     if len(memos) == 0:
         abort(404)
@@ -137,8 +139,8 @@ def recent(page):
     #for memo in memos:
     #    cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
     #    memo['username'] = cur.fetchone()['username']
-    for memo in memos:
-         memo['content'] = memo['content'].split('\n')[0]
+    #for memo in memos:
+    #     memo['content'] = memo['content'].split('\n')[0]
 
     cur.close()
 
