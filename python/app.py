@@ -22,7 +22,7 @@ import json, os, hashlib, tempfile, subprocess
 config = {}
 
 app = Flask(__name__, static_url_path='')
-app.cache = memcache.Client(['localhost:11211'], debug=0)
+app.cache = memcache.Client(['localhost:11212'], debug=0)
 app.session_interface = Session()
 app.session_cookie_name = "isucon_session"
 app.wsgi_app = ProxyFix(app.wsgi_app)
@@ -102,12 +102,14 @@ def top_page():
     cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100")
+    #cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100")
+    cur.execute("SELECT memo.id,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100")
     memos = cur.fetchall()
+    #for memo in memos:
+    #    cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
+    #    memo['username'] = cur.fetchone()['username']
     for memo in memos:
-        cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
-        memo['username'] = cur.fetchone()['username']
-
+         memo['content'] = memo['content'].split('\n')[0]
     cur.close()
 
     return render_template(
@@ -126,14 +128,17 @@ def recent(page):
     cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100 OFFSET " + str(page * 100))
+    #cur.execute("SELECT * FROM memos WHERE is_private=0 ORDER BY created_at DESC, id DESC LIMIT 100 OFFSET " + str(page * 100))
+    cur.execute("SELECT memo.id,memo.user,memo.content,memo.created_at, usr.username FROM memos memo inner join users usr on memo.user = usr.id  WHERE memo.is_private=0 ORDER BY memo.created_at DESC, memo.id DESC LIMIT 100 OFFSET " + str(page * 100))
     memos = cur.fetchall()
     if len(memos) == 0:
         abort(404)
 
+    #for memo in memos:
+    #    cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
+    #    memo['username'] = cur.fetchone()['username']
     for memo in memos:
-        cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
-        memo['username'] = cur.fetchone()['username']
+         memo['content'] = memo['content'].split('\n')[0]
 
     cur.close()
 
@@ -224,7 +229,7 @@ def memo(memo_id):
     memos = []
     older = None
     newer = None
-    cur.execute("SELECT * FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
+    cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
     memos = cur.fetchall()
     for i in range(len(memos)):
         if memos[i]["id"] == memo["id"]:

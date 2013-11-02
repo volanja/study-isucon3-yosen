@@ -8,7 +8,7 @@
 <ul id="memos">
 {% for memo in memos %}
 <li>
-  <a href="{{ url_for('memo', memo_id=memo.id, _external=True) }}">{{ memo.content.split('\n')[0] }}</a> by {{ memo.username }} ({{ memo.created_at }})
+  <a href="{{ url_for('memo', memo_id=memo.id, _external=True) }}">{{ memo.content }}</a> by {{ memo.username }} ({{ memo.created_at }})
 </li>
 {% endfor %}
 </ul>
