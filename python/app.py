@@ -147,7 +147,7 @@ def mypage():
     require_user(user)
 
     cur = get_db().cursor()
-    cur.execute('SELECT id, content, is_private, created_at, updated_at FROM memos WHERE user=%s ORDER BY created_at DESC', user["id"])
+    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=%s ORDER BY created_at DESC", user["id"])
     memos = cur.fetchall()
     cur.close()
 
@@ -200,7 +200,8 @@ def memo(memo_id):
     user = get_user()
 
     cur  = get_db().cursor()
-    cur.execute('SELECT id, user, content, is_private, created_at, updated_at FROM memos WHERE id=%s', memo_id)
+    #cur.execute('SELECT id, user, content, is_private, created_at, updated_at FROM memos WHERE id=%s', memo_id)
+    cur.execute("SELECT memo.id, memo.user, memo.content, memo.is_private, memo. created_at, memo.updated_at, usr.username FROM (SELECT id, user, content, is_private, created_at, updated_at FROM memos WHERE id=" + str(memo_id) + ") memo inner join users usr on memo.user = usr.id")
     memo = cur.fetchone()
     if not memo:
         abort(404)
@@ -209,8 +210,8 @@ def memo(memo_id):
         if not user or user["id"] != memo["user"]:
             abort(404)
 
-    cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
-    memo["username"] = cur.fetchone()["username"]
+    #cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
+    #memo["username"] = cur.fetchone()["username"]
     memo["content_html"] = gen_markdown(memo["content"])
     if user and user["id"] == memo["user"]:
         cond = ""

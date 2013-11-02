@@ -1,0 +1,929 @@
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (32115)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 32121
+INFO:gunicorn.error:Booting worker with pid: 32122
+INFO:gunicorn.error:Booting worker with pid: 32123
+INFO:gunicorn.error:Booting worker with pid: 32124
+INFO:gunicorn.error:Booting worker with pid: 32125
+INFO:gunicorn.error:Booting worker with pid: 32126
+INFO:gunicorn.error:Booting worker with pid: 32127
+INFO:gunicorn.error:Booting worker with pid: 32128
+INFO:gunicorn.error:Booting worker with pid: 32129
+INFO:gunicorn.error:Booting worker with pid: 32130
+INFO:gunicorn.error:Booting worker with pid: 32131
+INFO:gunicorn.error:Booting worker with pid: 32132
+INFO:gunicorn.error:Booting worker with pid: 32133
+INFO:gunicorn.error:Booting worker with pid: 32134
+INFO:gunicorn.error:Booting worker with pid: 32135
+INFO:gunicorn.error:Booting worker with pid: 32136
+INFO:gunicorn.error:Booting worker with pid: 32137
+INFO:gunicorn.error:Booting worker with pid: 32138
+INFO:gunicorn.error:Booting worker with pid: 32139
+INFO:gunicorn.error:Booting worker with pid: 32140
+INFO:gunicorn.error:Booting worker with pid: 32141
+INFO:gunicorn.error:Booting worker with pid: 32142
+INFO:gunicorn.error:Booting worker with pid: 32143
+INFO:gunicorn.error:Booting worker with pid: 32144
+INFO:gunicorn.error:Booting worker with pid: 32145
+INFO:gunicorn.error:Booting worker with pid: 32146
+INFO:gunicorn.error:Booting worker with pid: 32147
+INFO:gunicorn.error:Booting worker with pid: 32148
+INFO:gunicorn.error:Booting worker with pid: 32149
+INFO:gunicorn.error:Booting worker with pid: 32150
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 32128)
+INFO:gunicorn.error:Worker exiting (pid: 32129)
+INFO:gunicorn.error:Worker exiting (pid: 32133)
+INFO:gunicorn.error:Worker exiting (pid: 32130)
+INFO:gunicorn.error:Worker exiting (pid: 32146)
+INFO:gunicorn.error:Worker exiting (pid: 32131)
+INFO:gunicorn.error:Worker exiting (pid: 32134)
+INFO:gunicorn.error:Worker exiting (pid: 32147)
+INFO:gunicorn.error:Worker exiting (pid: 32142)
+INFO:gunicorn.error:Worker exiting (pid: 32126)
+INFO:gunicorn.error:Worker exiting (pid: 32135)
+INFO:gunicorn.error:Worker exiting (pid: 32132)
+INFO:gunicorn.error:Worker exiting (pid: 32143)
+INFO:gunicorn.error:Worker exiting (pid: 32136)
+INFO:gunicorn.error:Worker exiting (pid: 32137)
+INFO:gunicorn.error:Worker exiting (pid: 32138)
+INFO:gunicorn.error:Worker exiting (pid: 32144)
+INFO:gunicorn.error:Worker exiting (pid: 32139)
+INFO:gunicorn.error:Worker exiting (pid: 32145)
+INFO:gunicorn.error:Worker exiting (pid: 32140)
+INFO:gunicorn.error:Worker exiting (pid: 32149)
+INFO:gunicorn.error:Worker exiting (pid: 32122)
+INFO:gunicorn.error:Worker exiting (pid: 32141)
+INFO:gunicorn.error:Worker exiting (pid: 32148)
+INFO:gunicorn.error:Worker exiting (pid: 32150)
+INFO:gunicorn.error:Worker exiting (pid: 32121)
+INFO:gunicorn.error:Worker exiting (pid: 32123)
+INFO:gunicorn.error:Worker exiting (pid: 32124)
+INFO:gunicorn.error:Worker exiting (pid: 32125)
+INFO:gunicorn.error:Worker exiting (pid: 32127)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (17685)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 17691
+INFO:gunicorn.error:Booting worker with pid: 17692
+INFO:gunicorn.error:Booting worker with pid: 17693
+INFO:gunicorn.error:Booting worker with pid: 17694
+INFO:gunicorn.error:Booting worker with pid: 17695
+INFO:gunicorn.error:Booting worker with pid: 17696
+INFO:gunicorn.error:Booting worker with pid: 17697
+INFO:gunicorn.error:Booting worker with pid: 17698
+INFO:gunicorn.error:Booting worker with pid: 17699
+INFO:gunicorn.error:Booting worker with pid: 17700
+INFO:gunicorn.error:Booting worker with pid: 17701
+INFO:gunicorn.error:Booting worker with pid: 17702
+INFO:gunicorn.error:Booting worker with pid: 17703
+INFO:gunicorn.error:Booting worker with pid: 17704
+INFO:gunicorn.error:Booting worker with pid: 17705
+INFO:gunicorn.error:Booting worker with pid: 17706
+INFO:gunicorn.error:Booting worker with pid: 17707
+INFO:gunicorn.error:Booting worker with pid: 17708
+INFO:gunicorn.error:Booting worker with pid: 17709
+INFO:gunicorn.error:Booting worker with pid: 17710
+INFO:gunicorn.error:Booting worker with pid: 17711
+INFO:gunicorn.error:Booting worker with pid: 17712
+INFO:gunicorn.error:Booting worker with pid: 17713
+INFO:gunicorn.error:Booting worker with pid: 17714
+INFO:gunicorn.error:Booting worker with pid: 17715
+INFO:gunicorn.error:Booting worker with pid: 17716
+INFO:gunicorn.error:Booting worker with pid: 17717
+INFO:gunicorn.error:Booting worker with pid: 17718
+INFO:gunicorn.error:Booting worker with pid: 17719
+INFO:gunicorn.error:Booting worker with pid: 17720
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 17691)
+INFO:gunicorn.error:Worker exiting (pid: 17692)
+INFO:gunicorn.error:Worker exiting (pid: 17695)
+INFO:gunicorn.error:Worker exiting (pid: 17693)
+INFO:gunicorn.error:Worker exiting (pid: 17694)
+INFO:gunicorn.error:Worker exiting (pid: 17696)
+INFO:gunicorn.error:Worker exiting (pid: 17698)
+INFO:gunicorn.error:Worker exiting (pid: 17697)
+INFO:gunicorn.error:Worker exiting (pid: 17699)
+INFO:gunicorn.error:Worker exiting (pid: 17701)
+INFO:gunicorn.error:Worker exiting (pid: 17700)
+INFO:gunicorn.error:Worker exiting (pid: 17702)
+INFO:gunicorn.error:Worker exiting (pid: 17703)
+INFO:gunicorn.error:Worker exiting (pid: 17704)
+INFO:gunicorn.error:Worker exiting (pid: 17705)
+INFO:gunicorn.error:Worker exiting (pid: 17706)
+INFO:gunicorn.error:Worker exiting (pid: 17707)
+INFO:gunicorn.error:Worker exiting (pid: 17708)
+INFO:gunicorn.error:Worker exiting (pid: 17709)
+INFO:gunicorn.error:Worker exiting (pid: 17711)
+INFO:gunicorn.error:Worker exiting (pid: 17710)
+INFO:gunicorn.error:Worker exiting (pid: 17715)
+INFO:gunicorn.error:Worker exiting (pid: 17712)
+INFO:gunicorn.error:Worker exiting (pid: 17713)
+INFO:gunicorn.error:Worker exiting (pid: 17714)
+INFO:gunicorn.error:Worker exiting (pid: 17717)
+INFO:gunicorn.error:Worker exiting (pid: 17716)
+INFO:gunicorn.error:Worker exiting (pid: 17720)
+INFO:gunicorn.error:Worker exiting (pid: 17718)
+INFO:gunicorn.error:Worker exiting (pid: 17719)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (20403)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 20409
+INFO:gunicorn.error:Booting worker with pid: 20410
+INFO:gunicorn.error:Booting worker with pid: 20411
+INFO:gunicorn.error:Booting worker with pid: 20412
+INFO:gunicorn.error:Booting worker with pid: 20413
+INFO:gunicorn.error:Booting worker with pid: 20414
+INFO:gunicorn.error:Booting worker with pid: 20415
+INFO:gunicorn.error:Booting worker with pid: 20416
+INFO:gunicorn.error:Booting worker with pid: 20417
+INFO:gunicorn.error:Booting worker with pid: 20418
+INFO:gunicorn.error:Booting worker with pid: 20419
+INFO:gunicorn.error:Booting worker with pid: 20420
+INFO:gunicorn.error:Booting worker with pid: 20421
+INFO:gunicorn.error:Booting worker with pid: 20422
+INFO:gunicorn.error:Booting worker with pid: 20423
+INFO:gunicorn.error:Booting worker with pid: 20424
+INFO:gunicorn.error:Booting worker with pid: 20425
+INFO:gunicorn.error:Booting worker with pid: 20426
+INFO:gunicorn.error:Booting worker with pid: 20427
+INFO:gunicorn.error:Booting worker with pid: 20428
+INFO:gunicorn.error:Booting worker with pid: 20429
+INFO:gunicorn.error:Booting worker with pid: 20430
+INFO:gunicorn.error:Booting worker with pid: 20431
+INFO:gunicorn.error:Booting worker with pid: 20432
+INFO:gunicorn.error:Booting worker with pid: 20433
+INFO:gunicorn.error:Booting worker with pid: 20434
+INFO:gunicorn.error:Booting worker with pid: 20435
+INFO:gunicorn.error:Booting worker with pid: 20436
+INFO:gunicorn.error:Booting worker with pid: 20437
+INFO:gunicorn.error:Booting worker with pid: 20438
+ERROR:app:Exception on /mypage [GET]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 150, in mypage
+    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=" + user['id'] + " ORDER BY created_at DESC")
+TypeError: Can't convert 'int' object to str implicitly
+ERROR:app:Exception on /mypage [GET]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 150, in mypage
+    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=" + user['id'] + " ORDER BY created_at DESC")
+TypeError: Can't convert 'int' object to str implicitly
+ERROR:app:Exception on /mypage [GET]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 150, in mypage
+    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=" + user['id'] + " ORDER BY created_at DESC")
+TypeError: Can't convert 'int' object to str implicitly
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 20417)
+INFO:gunicorn.error:Worker exiting (pid: 20416)
+INFO:gunicorn.error:Worker exiting (pid: 20420)
+INFO:gunicorn.error:Worker exiting (pid: 20419)
+INFO:gunicorn.error:Worker exiting (pid: 20418)
+INFO:gunicorn.error:Worker exiting (pid: 20432)
+INFO:gunicorn.error:Worker exiting (pid: 20421)
+INFO:gunicorn.error:Worker exiting (pid: 20422)
+INFO:gunicorn.error:Worker exiting (pid: 20409)
+INFO:gunicorn.error:Worker exiting (pid: 20433)
+INFO:gunicorn.error:Worker exiting (pid: 20427)
+INFO:gunicorn.error:Worker exiting (pid: 20424)
+INFO:gunicorn.error:Worker exiting (pid: 20434)
+INFO:gunicorn.error:Worker exiting (pid: 20425)
+INFO:gunicorn.error:Worker exiting (pid: 20428)
+INFO:gunicorn.error:Worker exiting (pid: 20435)
+INFO:gunicorn.error:Worker exiting (pid: 20410)
+INFO:gunicorn.error:Worker exiting (pid: 20426)
+INFO:gunicorn.error:Worker exiting (pid: 20436)
+INFO:gunicorn.error:Worker exiting (pid: 20429)
+INFO:gunicorn.error:Worker exiting (pid: 20411)
+INFO:gunicorn.error:Worker exiting (pid: 20430)
+INFO:gunicorn.error:Worker exiting (pid: 20431)
+INFO:gunicorn.error:Worker exiting (pid: 20413)
+INFO:gunicorn.error:Worker exiting (pid: 20412)
+INFO:gunicorn.error:Worker exiting (pid: 20438)
+INFO:gunicorn.error:Worker exiting (pid: 20414)
+INFO:gunicorn.error:Worker exiting (pid: 20423)
+INFO:gunicorn.error:Worker exiting (pid: 20437)
+INFO:gunicorn.error:Worker exiting (pid: 20415)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (20455)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 20461
+INFO:gunicorn.error:Booting worker with pid: 20462
+INFO:gunicorn.error:Booting worker with pid: 20463
+INFO:gunicorn.error:Booting worker with pid: 20464
+INFO:gunicorn.error:Booting worker with pid: 20465
+INFO:gunicorn.error:Booting worker with pid: 20466
+INFO:gunicorn.error:Booting worker with pid: 20467
+INFO:gunicorn.error:Booting worker with pid: 20468
+INFO:gunicorn.error:Booting worker with pid: 20469
+INFO:gunicorn.error:Booting worker with pid: 20470
+INFO:gunicorn.error:Booting worker with pid: 20471
+INFO:gunicorn.error:Booting worker with pid: 20472
+INFO:gunicorn.error:Booting worker with pid: 20473
+INFO:gunicorn.error:Booting worker with pid: 20474
+INFO:gunicorn.error:Booting worker with pid: 20475
+INFO:gunicorn.error:Booting worker with pid: 20476
+INFO:gunicorn.error:Booting worker with pid: 20477
+INFO:gunicorn.error:Booting worker with pid: 20478
+INFO:gunicorn.error:Booting worker with pid: 20479
+INFO:gunicorn.error:Booting worker with pid: 20480
+INFO:gunicorn.error:Booting worker with pid: 20481
+INFO:gunicorn.error:Booting worker with pid: 20482
+INFO:gunicorn.error:Booting worker with pid: 20483
+INFO:gunicorn.error:Booting worker with pid: 20484
+INFO:gunicorn.error:Booting worker with pid: 20485
+INFO:gunicorn.error:Booting worker with pid: 20486
+INFO:gunicorn.error:Booting worker with pid: 20487
+INFO:gunicorn.error:Booting worker with pid: 20488
+INFO:gunicorn.error:Booting worker with pid: 20489
+INFO:gunicorn.error:Booting worker with pid: 20490
+ERROR:app:Exception on /mypage [GET]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 150, in mypage
+    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=" + user["id"] + " ORDER BY created_at DESC")
+TypeError: Can't convert 'int' object to str implicitly
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 20482)
+INFO:gunicorn.error:Worker exiting (pid: 20480)
+INFO:gunicorn.error:Worker exiting (pid: 20483)
+INFO:gunicorn.error:Worker exiting (pid: 20484)
+INFO:gunicorn.error:Worker exiting (pid: 20488)
+INFO:gunicorn.error:Worker exiting (pid: 20490)
+INFO:gunicorn.error:Worker exiting (pid: 20461)
+INFO:gunicorn.error:Worker exiting (pid: 20462)
+INFO:gunicorn.error:Worker exiting (pid: 20489)
+INFO:gunicorn.error:Worker exiting (pid: 20465)
+INFO:gunicorn.error:Worker exiting (pid: 20467)
+INFO:gunicorn.error:Worker exiting (pid: 20468)
+INFO:gunicorn.error:Worker exiting (pid: 20463)
+INFO:gunicorn.error:Worker exiting (pid: 20486)
+INFO:gunicorn.error:Worker exiting (pid: 20470)
+INFO:gunicorn.error:Worker exiting (pid: 20475)
+INFO:gunicorn.error:Worker exiting (pid: 20466)
+INFO:gunicorn.error:Worker exiting (pid: 20478)
+INFO:gunicorn.error:Worker exiting (pid: 20469)
+INFO:gunicorn.error:Worker exiting (pid: 20471)
+INFO:gunicorn.error:Worker exiting (pid: 20485)
+INFO:gunicorn.error:Worker exiting (pid: 20472)
+INFO:gunicorn.error:Worker exiting (pid: 20487)
+INFO:gunicorn.error:Worker exiting (pid: 20474)
+INFO:gunicorn.error:Worker exiting (pid: 20473)
+INFO:gunicorn.error:Worker exiting (pid: 20477)
+INFO:gunicorn.error:Worker exiting (pid: 20476)
+INFO:gunicorn.error:Worker exiting (pid: 20464)
+INFO:gunicorn.error:Worker exiting (pid: 20479)
+INFO:gunicorn.error:Worker exiting (pid: 20481)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (20584)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 20590
+INFO:gunicorn.error:Booting worker with pid: 20591
+INFO:gunicorn.error:Booting worker with pid: 20592
+INFO:gunicorn.error:Booting worker with pid: 20593
+INFO:gunicorn.error:Booting worker with pid: 20594
+INFO:gunicorn.error:Booting worker with pid: 20595
+INFO:gunicorn.error:Booting worker with pid: 20596
+INFO:gunicorn.error:Booting worker with pid: 20597
+INFO:gunicorn.error:Booting worker with pid: 20598
+INFO:gunicorn.error:Booting worker with pid: 20599
+INFO:gunicorn.error:Booting worker with pid: 20600
+INFO:gunicorn.error:Booting worker with pid: 20601
+INFO:gunicorn.error:Booting worker with pid: 20602
+INFO:gunicorn.error:Booting worker with pid: 20603
+INFO:gunicorn.error:Booting worker with pid: 20604
+INFO:gunicorn.error:Booting worker with pid: 20605
+INFO:gunicorn.error:Booting worker with pid: 20606
+INFO:gunicorn.error:Booting worker with pid: 20607
+INFO:gunicorn.error:Booting worker with pid: 20608
+INFO:gunicorn.error:Booting worker with pid: 20609
+INFO:gunicorn.error:Booting worker with pid: 20610
+INFO:gunicorn.error:Booting worker with pid: 20611
+INFO:gunicorn.error:Booting worker with pid: 20612
+INFO:gunicorn.error:Booting worker with pid: 20613
+INFO:gunicorn.error:Booting worker with pid: 20614
+INFO:gunicorn.error:Booting worker with pid: 20615
+INFO:gunicorn.error:Booting worker with pid: 20616
+INFO:gunicorn.error:Booting worker with pid: 20617
+INFO:gunicorn.error:Booting worker with pid: 20618
+INFO:gunicorn.error:Booting worker with pid: 20619
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 20609)
+INFO:gunicorn.error:Worker exiting (pid: 20608)
+INFO:gunicorn.error:Worker exiting (pid: 20611)
+INFO:gunicorn.error:Worker exiting (pid: 20613)
+INFO:gunicorn.error:Worker exiting (pid: 20610)
+INFO:gunicorn.error:Worker exiting (pid: 20614)
+INFO:gunicorn.error:Worker exiting (pid: 20612)
+INFO:gunicorn.error:Worker exiting (pid: 20617)
+INFO:gunicorn.error:Worker exiting (pid: 20619)
+INFO:gunicorn.error:Worker exiting (pid: 20592)
+INFO:gunicorn.error:Worker exiting (pid: 20615)
+INFO:gunicorn.error:Worker exiting (pid: 20616)
+INFO:gunicorn.error:Worker exiting (pid: 20598)
+INFO:gunicorn.error:Worker exiting (pid: 20590)
+INFO:gunicorn.error:Worker exiting (pid: 20593)
+INFO:gunicorn.error:Worker exiting (pid: 20618)
+INFO:gunicorn.error:Worker exiting (pid: 20591)
+INFO:gunicorn.error:Worker exiting (pid: 20599)
+INFO:gunicorn.error:Worker exiting (pid: 20594)
+INFO:gunicorn.error:Worker exiting (pid: 20595)
+INFO:gunicorn.error:Worker exiting (pid: 20597)
+INFO:gunicorn.error:Worker exiting (pid: 20600)
+INFO:gunicorn.error:Worker exiting (pid: 20606)
+INFO:gunicorn.error:Worker exiting (pid: 20596)
+INFO:gunicorn.error:Worker exiting (pid: 20607)
+INFO:gunicorn.error:Worker exiting (pid: 20604)
+INFO:gunicorn.error:Worker exiting (pid: 20601)
+INFO:gunicorn.error:Worker exiting (pid: 20602)
+INFO:gunicorn.error:Worker exiting (pid: 20603)
+INFO:gunicorn.error:Worker exiting (pid: 20605)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (28537)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 28543
+INFO:gunicorn.error:Booting worker with pid: 28544
+INFO:gunicorn.error:Booting worker with pid: 28545
+INFO:gunicorn.error:Booting worker with pid: 28546
+INFO:gunicorn.error:Booting worker with pid: 28547
+INFO:gunicorn.error:Booting worker with pid: 28548
+INFO:gunicorn.error:Booting worker with pid: 28549
+INFO:gunicorn.error:Booting worker with pid: 28550
+INFO:gunicorn.error:Booting worker with pid: 28551
+INFO:gunicorn.error:Booting worker with pid: 28552
+INFO:gunicorn.error:Booting worker with pid: 28553
+INFO:gunicorn.error:Booting worker with pid: 28554
+INFO:gunicorn.error:Booting worker with pid: 28555
+INFO:gunicorn.error:Booting worker with pid: 28556
+INFO:gunicorn.error:Booting worker with pid: 28557
+INFO:gunicorn.error:Booting worker with pid: 28558
+INFO:gunicorn.error:Booting worker with pid: 28559
+INFO:gunicorn.error:Booting worker with pid: 28560
+INFO:gunicorn.error:Booting worker with pid: 28561
+INFO:gunicorn.error:Booting worker with pid: 28562
+INFO:gunicorn.error:Booting worker with pid: 28563
+INFO:gunicorn.error:Booting worker with pid: 28564
+INFO:gunicorn.error:Booting worker with pid: 28565
+INFO:gunicorn.error:Booting worker with pid: 28566
+INFO:gunicorn.error:Booting worker with pid: 28567
+INFO:gunicorn.error:Booting worker with pid: 28568
+INFO:gunicorn.error:Booting worker with pid: 28569
+INFO:gunicorn.error:Booting worker with pid: 28570
+INFO:gunicorn.error:Booting worker with pid: 28571
+INFO:gunicorn.error:Booting worker with pid: 28572
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 28547)
+INFO:gunicorn.error:Worker exiting (pid: 28544)
+INFO:gunicorn.error:Worker exiting (pid: 28545)
+INFO:gunicorn.error:Worker exiting (pid: 28546)
+INFO:gunicorn.error:Worker exiting (pid: 28550)
+INFO:gunicorn.error:Worker exiting (pid: 28558)
+INFO:gunicorn.error:Worker exiting (pid: 28551)
+INFO:gunicorn.error:Worker exiting (pid: 28548)
+INFO:gunicorn.error:Worker exiting (pid: 28554)
+INFO:gunicorn.error:Worker exiting (pid: 28549)
+INFO:gunicorn.error:Worker exiting (pid: 28555)
+INFO:gunicorn.error:Worker exiting (pid: 28568)
+INFO:gunicorn.error:Worker exiting (pid: 28553)
+INFO:gunicorn.error:Worker exiting (pid: 28557)
+INFO:gunicorn.error:Worker exiting (pid: 28560)
+INFO:gunicorn.error:Worker exiting (pid: 28569)
+INFO:gunicorn.error:Worker exiting (pid: 28552)
+INFO:gunicorn.error:Worker exiting (pid: 28543)
+INFO:gunicorn.error:Worker exiting (pid: 28561)
+INFO:gunicorn.error:Worker exiting (pid: 28556)
+INFO:gunicorn.error:Worker exiting (pid: 28564)
+INFO:gunicorn.error:Worker exiting (pid: 28563)
+INFO:gunicorn.error:Worker exiting (pid: 28559)
+INFO:gunicorn.error:Worker exiting (pid: 28565)
+INFO:gunicorn.error:Worker exiting (pid: 28567)
+INFO:gunicorn.error:Worker exiting (pid: 28571)
+INFO:gunicorn.error:Worker exiting (pid: 28570)
+INFO:gunicorn.error:Worker exiting (pid: 28562)
+INFO:gunicorn.error:Worker exiting (pid: 28566)
+INFO:gunicorn.error:Worker exiting (pid: 28572)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (29322)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 29328
+INFO:gunicorn.error:Booting worker with pid: 29329
+INFO:gunicorn.error:Booting worker with pid: 29330
+INFO:gunicorn.error:Booting worker with pid: 29331
+INFO:gunicorn.error:Booting worker with pid: 29332
+INFO:gunicorn.error:Booting worker with pid: 29333
+INFO:gunicorn.error:Booting worker with pid: 29334
+INFO:gunicorn.error:Booting worker with pid: 29335
+INFO:gunicorn.error:Booting worker with pid: 29336
+INFO:gunicorn.error:Booting worker with pid: 29337
+INFO:gunicorn.error:Booting worker with pid: 29338
+INFO:gunicorn.error:Booting worker with pid: 29339
+INFO:gunicorn.error:Booting worker with pid: 29340
+INFO:gunicorn.error:Booting worker with pid: 29341
+INFO:gunicorn.error:Booting worker with pid: 29342
+INFO:gunicorn.error:Booting worker with pid: 29343
+INFO:gunicorn.error:Booting worker with pid: 29344
+INFO:gunicorn.error:Booting worker with pid: 29345
+INFO:gunicorn.error:Booting worker with pid: 29346
+INFO:gunicorn.error:Booting worker with pid: 29347
+INFO:gunicorn.error:Booting worker with pid: 29348
+INFO:gunicorn.error:Booting worker with pid: 29349
+INFO:gunicorn.error:Booting worker with pid: 29350
+INFO:gunicorn.error:Booting worker with pid: 29351
+INFO:gunicorn.error:Booting worker with pid: 29352
+INFO:gunicorn.error:Booting worker with pid: 29353
+INFO:gunicorn.error:Booting worker with pid: 29354
+INFO:gunicorn.error:Booting worker with pid: 29355
+INFO:gunicorn.error:Booting worker with pid: 29356
+INFO:gunicorn.error:Booting worker with pid: 29357
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/cursors.py", line 112, in execute
+    result = self._query(query)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/cursors.py", line 230, in _query
+    conn.query(q)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 607, in query
+    self._affected_rows = self._read_query_result()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 691, in _read_query_result
+    result.read()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 875, in read
+    self._read_result_packet()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 888, in _read_result_packet
+    self._read_rowdata_packet()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 896, in _read_rowdata_packet
+    packet = self.connection.read_packet()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 686, in read_packet
+    packet.check_error()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 328, in check_error
+    raise_mysql_exception(self.__data)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/err.py", line 142, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/err.py", line 138, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1317, 'Query execution was interrupted')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 105, in top_page
+    cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/cursors.py", line 262, in execute
+    result = super(DictCursor, self).execute(query, args)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/cursors.py", line 117, in execute
+    self.errorhandler(self, exc, value)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/PyMySQL3-0.5-py3.3.egg/pymysql/connections.py", line 189, in defaulterrorhandler
+    raise errorclass(errorvalue)
+pymysql.err.InternalError: (1317, 'Query execution was interrupted')
+INFO:gunicorn.error:Handling signal: term
+INFO:gunicorn.error:Worker exiting (pid: 29329)
+INFO:gunicorn.error:Worker exiting (pid: 29328)
+INFO:gunicorn.error:Worker exiting (pid: 29331)
+INFO:gunicorn.error:Worker exiting (pid: 29330)
+INFO:gunicorn.error:Worker exiting (pid: 29333)
+INFO:gunicorn.error:Worker exiting (pid: 29340)
+INFO:gunicorn.error:Worker exiting (pid: 29335)
+INFO:gunicorn.error:Worker exiting (pid: 29334)
+INFO:gunicorn.error:Worker exiting (pid: 29332)
+INFO:gunicorn.error:Worker exiting (pid: 29336)
+INFO:gunicorn.error:Worker exiting (pid: 29338)
+INFO:gunicorn.error:Worker exiting (pid: 29343)
+INFO:gunicorn.error:Worker exiting (pid: 29339)
+INFO:gunicorn.error:Worker exiting (pid: 29337)
+INFO:gunicorn.error:Worker exiting (pid: 29341)
+INFO:gunicorn.error:Worker exiting (pid: 29344)
+INFO:gunicorn.error:Worker exiting (pid: 29342)
+INFO:gunicorn.error:Worker exiting (pid: 29350)
+INFO:gunicorn.error:Worker exiting (pid: 29346)
+INFO:gunicorn.error:Worker exiting (pid: 29345)
+INFO:gunicorn.error:Worker exiting (pid: 29351)
+INFO:gunicorn.error:Worker exiting (pid: 29347)
+INFO:gunicorn.error:Worker exiting (pid: 29352)
+INFO:gunicorn.error:Worker exiting (pid: 29354)
+INFO:gunicorn.error:Worker exiting (pid: 29348)
+INFO:gunicorn.error:Worker exiting (pid: 29353)
+INFO:gunicorn.error:Worker exiting (pid: 29349)
+INFO:gunicorn.error:Worker exiting (pid: 29356)
+INFO:gunicorn.error:Worker exiting (pid: 29355)
+INFO:gunicorn.error:Worker exiting (pid: 29357)
+INFO:gunicorn.error:Shutting down: Master
+INFO:gunicorn.error:Starting gunicorn 18.0
+INFO:gunicorn.error:Listening at: unix:/tmp/gunicorn.sock (17530)
+INFO:gunicorn.error:Using worker: sync
+INFO:gunicorn.error:Booting worker with pid: 17536
+INFO:gunicorn.error:Booting worker with pid: 17537
+INFO:gunicorn.error:Booting worker with pid: 17538
+INFO:gunicorn.error:Booting worker with pid: 17539
+INFO:gunicorn.error:Booting worker with pid: 17540
+INFO:gunicorn.error:Booting worker with pid: 17541
+INFO:gunicorn.error:Booting worker with pid: 17542
+INFO:gunicorn.error:Booting worker with pid: 17543
+INFO:gunicorn.error:Booting worker with pid: 17544
+INFO:gunicorn.error:Booting worker with pid: 17545
+INFO:gunicorn.error:Booting worker with pid: 17546
+INFO:gunicorn.error:Booting worker with pid: 17547
+INFO:gunicorn.error:Booting worker with pid: 17548
+INFO:gunicorn.error:Booting worker with pid: 17549
+INFO:gunicorn.error:Booting worker with pid: 17550
+INFO:gunicorn.error:Booting worker with pid: 17551
+INFO:gunicorn.error:Booting worker with pid: 17552
+INFO:gunicorn.error:Booting worker with pid: 17553
+INFO:gunicorn.error:Booting worker with pid: 17554
+INFO:gunicorn.error:Booting worker with pid: 17555
+INFO:gunicorn.error:Booting worker with pid: 17556
+INFO:gunicorn.error:Booting worker with pid: 17557
+INFO:gunicorn.error:Booting worker with pid: 17558
+INFO:gunicorn.error:Booting worker with pid: 17559
+INFO:gunicorn.error:Booting worker with pid: 17560
+INFO:gunicorn.error:Booting worker with pid: 17561
+INFO:gunicorn.error:Booting worker with pid: 17562
+INFO:gunicorn.error:Booting worker with pid: 17563
+INFO:gunicorn.error:Booting worker with pid: 17564
+INFO:gunicorn.error:Booting worker with pid: 17565
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
+ERROR:app:Exception on /memo [POST]
+Traceback (most recent call last):
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/isucon/local/python-3.3/lib/python3.3/site-packages/Flask-0.10.1-py3.3.egg/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/isucon/webapp/python/app.py", line 244, in memo_post
+    require_user(user)
+  File "/home/isucon/webapp/python/app.py", line 75, in require_user
+    abort()
+TypeError: __call__() missing 1 required positional argument: 'code'
