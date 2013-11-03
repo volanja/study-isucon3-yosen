@@ -29,6 +29,7 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 # log
 import logging
 logging.basicConfig(filename='log.txt')
+#logging.basicConfig(filename='log.txt', level=logging.DEBUG)
 
 def load_config():
     global config
@@ -175,6 +176,7 @@ def signin_post():
     if user and user["password"] == hashlib.sha256(bytes(user["salt"] + password, 'UTF-8')).hexdigest():
         session["user_id"] = user["id"]
         session["token"] = hashlib.sha256(os.urandom(40)).hexdigest()
+        set_mem(user["id"]) # for memcached
         cur.execute("UPDATE users SET last_access=now() WHERE id=%s", user["id"])
         cur.close()
         db.commit()
@@ -215,19 +217,44 @@ def memo(memo_id):
     memo["content_html"] = gen_markdown(memo["content"])
     if user and user["id"] == memo["user"]:
         cond = ""
+        mem_index = "list_memo_pri_" + str(memo["user"]) # e.g. list_memo_pri_80
+        logging.debug("get private")
     else:
         cond = "AND is_private=0"
+        mem_index = "list_memo_" + str(memo["user"]) # e.g. list_memo_80
+        logging.debug("get public")
     memos = []
     older = None
     newer = None
-    cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
-    memos = cur.fetchall()
-    for i in range(len(memos)):
-        if memos[i]["id"] == memo["id"]:
-            if i > 0:
-                older = memos[i - 1]
-            if i < len(memos) - 1:
-                newer = memos[i + 1]
+    # save memcached
+    if app.cache.get(mem_index) == None:
+        # 1st
+        list_memo = []  # memcached
+        logging.debug("mem_index is not exist")
+        cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
+        memos = cur.fetchall()
+        for i in range(len(memos)):
+            list_memo.append(memos[i]["id"]) #memcached
+        #cur.close()
+        app.cache.set(mem_index, list_memo)
+        res = app.cache.get(mem_index)
+    else:
+        # after 2nd 
+        logging.debug("mem_index is exist")
+        res = app.cache.get(mem_index)
+    now = res.index(memo["id"])
+    older = {'id': res[ now - 1 ]}
+    if res[ now ] != res[-1]:
+        newer = {'id': res[ now + 1 ]}
+
+    #cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
+    #memos = cur.fetchall()
+    #for i in range(len(memos)):
+    #    if memos[i]["id"] == memo["id"]:
+    #        if i > 0:
+    #            older = memos[i - 1]
+    #        if i < len(memos) - 1:
+    #            newer = memos[i + 1]
     cur.close()
 
     return render_template(
@@ -257,8 +284,37 @@ def memo_post():
     cur.close()
     db.commit()
 
+    #pri
+    mem_index = "list_memo_pri_" + str(user["id"]) # e.g. list_memo_pri_80
+    res_pri = app.cache.get(mem_index)
+    res_pri.append(memo_id)
+    app.cache.set(mem_index, res_pri)
+    #public
+    mem_index = "list_memo_" + str(user["id"]) # e.g. list_memo_pri_80
+    res_pub = app.cache.get(mem_index)
+    res_pub.append(memo_id)
+    app.cache.set(mem_index, res_pub)
+
     return redirect(url_for('memo', memo_id=memo_id))
 
+
+def set_mem(user_id):
+    cur  = get_db().cursor()
+    #private
+    cur.execute("SELECT id FROM memos WHERE user=%s ORDER BY created_at", user_id)
+    memo_pri = cur.fetchall()
+    list_memo_pri = []
+    for i in range(len(memo_pri)):
+        list_memo_pri.append(memo_pri[i]["id"]) #memcached
+    app.cache.set("list_memo_pri_" + str(user_id), list_memo_pri)
+    #public
+    cur.execute("SELECT id FROM memos WHERE user=%s AND is_private=0 ORDER BY created_at", user_id)
+    memo_pub = cur.fetchall()
+    list_memo_pub = []
+    for i in range(len(memo_pub)):
+        list_memo_pub.append(memo_pub[i]["id"]) #memcached
+    app.cache.set("list_memo_" + str(user_id), list_memo_pub)
+    cur.close()
 
 if __name__ == "__main__":
     load_config()
