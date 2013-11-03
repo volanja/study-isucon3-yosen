@@ -1,1 +1,1 @@
-sudo cat /var/log/nginx/access.log |awk '{print $10,$7}' |sort -gr |uniq -c |head -n 10
+sudo cat /var/log/nginx/access.log |awk '{print $10,$6,$7}' |sort -gr |uniq -c |head -n 10
