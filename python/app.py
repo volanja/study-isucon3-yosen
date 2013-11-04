@@ -126,7 +126,7 @@ def recent(page):
     cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 ORDER BY created_at DESC, id DESC LIMIT 100 OFFSET " + str(page * 100) + ") as memo_inf inner join users usr on memo_inf.user = usr.id")
+    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
     memos = cur.fetchall()
     if len(memos) == 0:
         abort(404)
