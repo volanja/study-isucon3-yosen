@@ -237,16 +237,16 @@ def memo(memo_id):
             list_memo.append(memos[i]["id"]) #memcached
         #cur.close()
         app.cache.set(mem_index, list_memo)
-        res = app.cache.get(mem_index)
+        str_res = app.cache.get(mem_index)
     else:
         # after 2nd 
         logging.debug("mem_index is exist")
-        res = app.cache.get(mem_index)
+        str_res = app.cache.get(mem_index)
+    res = list(map(int, str_res.split(',')))  # String to list
     now = res.index(memo["id"])
     older = {'id': res[ now - 1 ]}
     if res[ now ] != res[-1]:
         newer = {'id': res[ now + 1 ]}
-
     #cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
     #memos = cur.fetchall()
     #for i in range(len(memos)):
@@ -285,15 +285,18 @@ def memo_post():
     db.commit()
 
     #pri
-    mem_index = "list_memo_pri_" + str(user["id"]) # e.g. list_memo_pri_80
-    res_pri = app.cache.get(mem_index)
-    res_pri.append(memo_id)
-    app.cache.set(mem_index, res_pri)
+    mem_key_pri = "list_memo_pri_" + str(user["id"]) # e.g. list_memo_pri_80
+    if len(app.cache.get(mem_key_pri)) > 0:
+        app.cache.append(mem_key_pri, ',' + str(memo_id))
+    else:
+        app.cache.add(mem_key_pri, str(memo_id))
+
     #public
-    mem_index = "list_memo_" + str(user["id"]) # e.g. list_memo_pri_80
-    res_pub = app.cache.get(mem_index)
-    res_pub.append(memo_id)
-    app.cache.set(mem_index, res_pub)
+    mem_key_pub = "list_memo_" + str(user["id"]) # e.g. list_memo_pri_80
+    if len(app.cache.get(mem_key_pub)) > 0:
+        app.cache.append(mem_key_pub, ',' + str(memo_id))
+    else:
+        app.cache.add(mem_key_pub, str(memo_id))
 
     return redirect(url_for('memo', memo_id=memo_id))
 
@@ -306,14 +309,22 @@ def set_mem(user_id):
     list_memo_pri = []
     for i in range(len(memo_pri)):
         list_memo_pri.append(memo_pri[i]["id"]) #memcached
-    app.cache.set("list_memo_pri_" + str(user_id), list_memo_pri)
+    # list to String
+    str_memo_pri=','.join(map(str, list_memo_pri))
+    app.cache.set("list_memo_pri_" + str(user_id), str_memo_pri)
+    # sample list to String
+    #str_memo_pri=','.join(map(str, list_memo_pri))
+    # String to list
+    #test_memo_pri= list(map(int, str_memo_pri.split(',')))
+    # sample end
     #public
     cur.execute("SELECT id FROM memos WHERE user=%s AND is_private=0 ORDER BY created_at", user_id)
     memo_pub = cur.fetchall()
     list_memo_pub = []
     for i in range(len(memo_pub)):
         list_memo_pub.append(memo_pub[i]["id"]) #memcached
-    app.cache.set("list_memo_" + str(user_id), list_memo_pub)
+    str_memo_pub=','.join(map(str, list_memo_pub))
+    app.cache.set("list_memo_" + str(user_id), str_memo_pub)
     cur.close()
 
 if __name__ == "__main__":
