@@ -51,12 +51,15 @@ def connect_db():
 
 def get_user():
     user_id = session.get('user_id')
-    user = None
-    if user_id:
-        cur = get_db().cursor()
-        cur.execute("SELECT * FROM users WHERE id=%s", user_id)
-        user = cur.fetchone()
-        cur.close()
+    user_username = session.get('user_username')
+    user = {'id':user_id, 'username':user_username}
+    if not user_id:
+      user = None
+    #if user_id:
+    #    cur = get_db().cursor()
+    #    cur.execute("SELECT * FROM users WHERE id=%s", user_id)
+    #    user = cur.fetchone()
+    #    cur.close()
     if user:
         @after_this_request
         def add_header(response):
@@ -175,6 +178,7 @@ def signin_post():
     user = cur.fetchone()
     if user and user["password"] == hashlib.sha256(bytes(user["salt"] + password, 'UTF-8')).hexdigest():
         session["user_id"] = user["id"]
+        session["user_username"] = user["username"]
         session["token"] = hashlib.sha256(os.urandom(40)).hexdigest()
         set_mem(user["id"]) # for memcached
         cur.execute("UPDATE users SET last_access=now() WHERE id=%s", user["id"])

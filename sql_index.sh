@@ -1,7 +1,7 @@
 mysql -u root -proot -e "use isucon;
-CREATE INDEX memo_order_index ON memos(created_at, id); \
-CREATE INDEX memo_join_index ON memos(user); \
-CREATE INDEX memo_index_pri ON memos(is_private); \
+CREATE INDEX memos_idx_is_private_created_at ON memos (is_private,created_at); \
+CREATE INDEX memos_idx_user_created_at ON memos (user,created_at); \
+CREATE INDEX memos_idx_user_is_private_created_at ON memos (user,is_private,created_at); \
 analyze table memos; \
 analyze table users; \
 "
