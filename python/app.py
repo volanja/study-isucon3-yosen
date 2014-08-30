@@ -17,6 +17,11 @@ import memcache
 from flask_memcache_session import Session
 from werkzeug.contrib.fixers import ProxyFix
 
+# git clone https://github.com/dart-lang/py-gfm.git
+# cd py-gfm
+# python setup.py install
+from markdown import markdown
+
 import json, os, hashlib, tempfile, subprocess
 config = {}
 
@@ -218,7 +223,8 @@ def memo(memo_id):
 
     #cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
     #memo["username"] = cur.fetchone()["username"]
-    memo["content_html"] = gen_markdown(memo["content"])
+    #memo["content_html"] = gen_markdown(memo["content"])
+    memo["content_html"] = markdown(memo["content"])
     if user and user["id"] == memo["user"]:
         cond = ""
         mem_index = "list_memo_pri_" + str(memo["user"]) # e.g. list_memo_pri_80
