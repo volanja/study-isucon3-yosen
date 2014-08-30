@@ -106,7 +106,7 @@ def top_page():
     user = get_user()
 
     cur = get_db().cursor()
-    cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
+    cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
     cur.execute("SELECT memo_inf.id, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id, user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 ORDER BY created_at DESC, id DESC LIMIT 100) as memo_inf inner join users usr on memo_inf.user = usr.id")
@@ -126,7 +126,7 @@ def recent(page):
     user = get_user()
 
     cur = get_db().cursor()
-    cur.execute('SELECT count(*) AS c FROM memos WHERE is_private=0')
+    cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
     cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
