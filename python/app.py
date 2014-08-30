@@ -21,7 +21,7 @@ import json, os, hashlib, tempfile, subprocess
 config = {}
 
 app = Flask(__name__, static_url_path='')
-app.cache = memcache.Client(['localhost:11212'], debug=0)
+app.cache = memcache.Client(['unix:/tmp/memcached.sock'], debug=0)
 app.session_interface = Session()
 app.session_cookie_name = "isucon_session"
 app.wsgi_app = ProxyFix(app.wsgi_app)
