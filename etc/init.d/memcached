@@ -33,7 +33,6 @@ fi
 RETVAL=0
 prog="memcached"
 pidfile=${PIDFILE-/var/run/memcached/memcached.pid}
-sockfile="/tmp/memcached.sock"
 lockfile=${LOCKFILE-/var/lock/subsys/memcached}
 
 start () {
@@ -43,8 +42,7 @@ start () {
 		chown $USER /var/run/memcached
 	fi
 
-	#daemon --pidfile ${pidfile} memcached -d -p $PORT -u $USER  -m $CACHESIZE -c $MAXCONN -P ${pidfile} $OPTIONS
-	daemon --pidfile ${pidfile} memcached -d -u $USER  -m $CACHESIZE -c $MAXCONN -P ${pidfile} $OPTIONS -s ${sockfile}
+	daemon --pidfile ${pidfile} memcached -d -p $PORT -u $USER  -m $CACHESIZE -c $MAXCONN -P ${pidfile} $OPTIONS
 	RETVAL=$?
 	echo
 	[ $RETVAL -eq 0 ] && touch ${lockfile}
