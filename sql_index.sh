@@ -19,3 +19,6 @@ analyze table memos; \
 analyze table users; \
 "
 sudo echo '' > /var/lib/mysql/slow-query.log
+sudo service memcached restart
+sudo service supervisord restart
+sleep 5

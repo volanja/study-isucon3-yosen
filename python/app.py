@@ -33,8 +33,8 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 
 # log
 import logging
-#logging.basicConfig(filename='log.txt')
-logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+logging.basicConfig(filename='log.txt')
+#logging.basicConfig(filename='log.txt', level=logging.DEBUG)
 
 def load_config():
     global config
@@ -84,12 +84,12 @@ def require_user(user):
         abort()
 
 
-def gen_markdown(md):
-    temp = tempfile.NamedTemporaryFile()
-    temp.write(bytes(md, 'UTF-8'))
-    temp.flush()
-    html = subprocess.getoutput("../bin/markdown %s" % temp.name)
-    temp.close()
+def gen_markdown(memo_id, md):
+    mid = "memo_content_" + str(memo_id)
+    html = app.cache.get(mid)
+    if html == None:
+        html = markdown(md)
+        app.cache.set(mid, html)
     return html
 
 def get_db():
@@ -225,8 +225,8 @@ def memo(memo_id):
 
     #cur.execute('SELECT username FROM users WHERE id=%s', memo["user"])
     #memo["username"] = cur.fetchone()["username"]
-    #memo["content_html"] = gen_markdown(memo["content"])
-    memo["content_html"] = markdown(memo["content"])
+    memo["content_html"] = gen_markdown(memo_id, memo["content"])
+    #memo["content_html"] = markdown(memo["content"])
     if user and user["id"] == memo["user"]:
         cond = ""
         mem_index = "list_memo_pri_" + str(memo["user"]) # e.g. list_memo_pri_80
