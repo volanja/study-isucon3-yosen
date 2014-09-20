@@ -111,7 +111,7 @@ def top_page():
     user = get_user()
 
     cur = get_db().cursor()
-    cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
+    cur.execute('SELECT count(1) AS c FROM public_memos')
     total = cur.fetchone()['c']
 
     cur.execute("SELECT memo_inf.id, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id, user, title as content,created_at , is_private FROM memos where is_private = 0 ORDER BY created_at DESC, id DESC LIMIT 100) as memo_inf inner join users usr on memo_inf.user = usr.id")
@@ -131,10 +131,12 @@ def recent(page):
     user = get_user()
 
     cur = get_db().cursor()
-    cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
+    cur.execute('SELECT count(1) AS c FROM public_memos')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user, title as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
+    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.title as content, memo_inf.created_at, usr.username FROM memos as memo_inf inner join users usr on memo_inf.user = usr.id inner join (SELECT memo FROM public_memos WHERE id BETWEEN " + str(page * 100 + 1) + " and " + str(page * 100 + 100) + ") as memo_order on memo_inf.id = memo_order.memo")
+
+    #cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user, title as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
     memos = cur.fetchall()
     if len(memos) == 0:
         abort(404)
@@ -292,6 +294,13 @@ def memo_post():
         )
     )
     memo_id = db.insert_id()
+    logging.debug(memo_id)
+
+    if request.form.get("is_private") != 1:
+      cur.execute(
+        "INSERT INTO public_memos (memo) VALUES (%s)",
+        (memo_id)
+      )
     cur.close()
     db.commit()
 
