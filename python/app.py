@@ -114,7 +114,7 @@ def top_page():
     cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT memo_inf.id, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id, user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 ORDER BY created_at DESC, id DESC LIMIT 100) as memo_inf inner join users usr on memo_inf.user = usr.id")
+    cur.execute("SELECT memo_inf.id, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id, user, title as content,created_at , is_private FROM memos where is_private = 0 ORDER BY created_at DESC, id DESC LIMIT 100) as memo_inf inner join users usr on memo_inf.user = usr.id")
     memos = cur.fetchall()
     cur.close()
 
@@ -134,7 +134,7 @@ def recent(page):
     cur.execute('SELECT count(1) AS c FROM memos WHERE is_private=0')
     total = cur.fetchone()['c']
 
-    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user,substring_index(content,'\n',1) as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
+    cur.execute("SELECT memo_inf.id, memo_inf.user, memo_inf.content, memo_inf.created_at, usr.username FROM (SELECT id,user, title as content,created_at , is_private FROM memos where is_private = 0 and id >= " + str(page * 100) + " ORDER BY created_at DESC, id DESC LIMIT 100 ) as memo_inf inner join users usr on memo_inf.user = usr.id")
     memos = cur.fetchall()
     if len(memos) == 0:
         abort(404)
@@ -156,7 +156,7 @@ def mypage():
     require_user(user)
 
     cur = get_db().cursor()
-    cur.execute("SELECT id, substring_index(content, '\n', 1) as content, is_private, created_at, updated_at FROM memos WHERE user=%s ORDER BY created_at DESC", user["id"])
+    cur.execute("SELECT id, title as content, is_private, created_at, updated_at FROM memos WHERE user=%s ORDER BY created_at DESC", user["id"])
     memos = cur.fetchall()
     cur.close()
 
@@ -284,10 +284,11 @@ def memo_post():
     db  = get_db()
     cur = db.cursor()
     cur.execute(
-        "INSERT INTO memos (user, content, is_private, created_at) VALUES (%s, %s, %s, now())",
+        "INSERT INTO memos (user, content, is_private, created_at, title) VALUES (%s, %s, %s, now(), %s)",
         ( user["id"],
           request.form["content"],
-          int(request.form.get("is_private") or 0)
+          int(request.form.get("is_private") or 0),
+	  request.form["content"].split('\n')[0]
         )
     )
     memo_id = db.insert_id()
