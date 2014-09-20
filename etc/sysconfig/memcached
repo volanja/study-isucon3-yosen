@@ -1,5 +1,5 @@
 PORT="11212"
 USER="memcached"
-MAXCONN="2048"
-CACHESIZE="128"
-OPTIONS=""
+MAXCONN="100000"
+CACHESIZE="1024"
+#OPTIONS="-vv 1>/tmp/memcached.log 2>&1"

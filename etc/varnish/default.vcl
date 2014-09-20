@@ -6,7 +6,26 @@
 # 
 backend default {
   .host = "127.0.0.1";
-  .port = "80";
+  .port = "8080";
+}
+
+#sub vcl_recv {
+#  # POST リクエストやCookieがある(ログイン中)の場合は直接アプリを参照
+#  if (req.request != "GET" || req.http.Cookie) {
+#      return (pass);
+#  }
+#  return (lookup); # それ以外はキャッシュを探す
+#}
+#
+#sub vcl_hash {
+#    hash_data(req.url);
+#    hash_data(req.http.host);
+#    return (hash);
+#}
+#
+sub vcl_fetch {
+    set beresp.ttl = 3m; # キャッシュ期間は1日に設定。数字は適当で、とにかく長くしておけばいい
+    return (deliver);
 }
 # 
 # Below is a commented-out copy of the default VCL logic.  If you
