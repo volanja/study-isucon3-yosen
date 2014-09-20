@@ -33,8 +33,8 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 
 # log
 import logging
-logging.basicConfig(filename='log.txt')
-#logging.basicConfig(filename='log.txt', level=logging.DEBUG)
+#logging.basicConfig(filename='log.txt')
+logging.basicConfig(filename='log.txt', level=logging.DEBUG)
 
 def load_config():
     global config
@@ -254,10 +254,11 @@ def memo(memo_id):
         # after 2nd 
         logging.debug("mem_index is exist")
         str_res = app.cache.get(mem_index)
-    res = list(map(int, str_res.split(',')))  # String to list
-    now = res.index(memo["id"])
-    older = {'id': res[ now - 1 ]}
-    if res[ now ] != res[-1]:
+    if str_res != "":
+      res = list(map(int, str_res.split(',')))  # String to list
+      now = res.index(memo["id"])
+      older = {'id': res[ now - 1 ]}
+      if res[ now ] != res[-1]:
         newer = {'id': res[ now + 1 ]}
     #cur.execute("SELECT id FROM memos WHERE user=%s " + cond + " ORDER BY created_at", memo["user"])
     #memos = cur.fetchall()
