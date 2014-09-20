@@ -188,7 +188,7 @@ def signin_post():
         session["user_username"] = user["username"]
         session["token"] = hashlib.sha256(os.urandom(40)).hexdigest()
         set_mem(user["id"]) # for memcached
-        cur.execute("UPDATE users SET last_access=now() WHERE id=%s", user["id"])
+        #cur.execute("UPDATE users SET last_access=now() WHERE id=%s", user["id"])
         cur.close()
         db.commit()
         return redirect(url_for("mypage"))
