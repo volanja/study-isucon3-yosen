@@ -8,8 +8,10 @@ require 'erubis'
 require 'tempfile'
 require 'rack-mini-profiler'
 require 'newrelic_rpm'
+require 'rack-lineprof'
 
 class Isucon3App < Sinatra::Base
+  use Rack::Lineprof, profile: 'app.rb'
   $stdout.sync = true
   use Rack::Session::Dalli, {
     :key => 'isucon_session',
